@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimmy’s Voertuig Reiniging</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #1d4ed8;
+      padding: 14px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      font-size: 1.2rem;
+      padding: 18px 32px;
+      border-radius: 14px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto;
+      color: #4b5563;
+    }
+
+    .services, .prices {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .price-note {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: #6b7280;
+      font-style: italic;
+    }
+
+    .contact {
+      background: #111827;
+      color: white;
+      border-radius: 20px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .services,
+      .prices,
+      .extra-services {
+        grid-template-columns: 1fr !important;
+      }
+
+      .prices .card,
+      .services .card,
+      .extra-services .card {
+        grid-column: auto !important;
+      }
+
+      section {
+        padding: 40px 14px;
+      }
+    }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:20px;">
+      <div style="background:black; border-radius:50%; padding:20px 40px; display:inline-block;">
+        <img src="Auto en water voor reiniging logo.png" alt="Logo" style="width:260px; display:block;">
+      </div>
+    </div><h1>Jimmy’s Voertuig Reiniging</h1>
+    <p>Professionele voertuigreiniging voor auto’s, bestelbussen en grote voertuigen. Van een grondige wasbeurt tot diep reinigen: wij zorgen dat jouw voertuig er weer strak en verzorgd uitziet.</p>
+    <a href="#contact" class="btn">Maak een afspraak</a>
+  </header>
+
+  <section>
+    <h2>Over ons</h2>
+    <p class="intro">Bij Jimmy’s Voertuig Reiniging draait alles om kwaliteit, netheid en aandacht voor detail. Wij reinigen auto’s, bestelbussen en grote voertuigen van binnen en buiten. Prijzen kunnen variëren afhankelijk van de staat van het voertuig.</p>
+  </section>
+
+  <section style="background:#e0f2fe; border-radius:20px;">
+    <h2>Onze diensten</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Buiten wassen</h3>
+        <p>Grondige handwas voor een frisse, schone en verzorgde uitstraling van elk voertuig.</p>
+      </div>
+      <div class="card">
+        <h3>Velgen diep reinigen</h3>
+        <p>Extra grondige reiniging van velgen om remstof, vuil en aanslag goed te verwijderen.</p>
+      </div>
+      <div class="card">
+        <h3>Binnen reinigen</h3>
+        <p>Diepgaande interieurreiniging inclusief stofzuigen, kunststof delen reinigen en ramen schoonmaken.</p>
+      </div>
+      
+    </div>
+
+    <div class="services extra-services" style="margin-top:40px; max-width:900px; margin-left:auto; margin-right:auto;">
+<div class="card" style="grid-column: span 1;">
+        <h3>Auto verkoop klaar maken</h3>
+        <p>Auto professioneel reinigen en klaarmaken voor verkoop.</p>
+      </div>
+      <div class="card" style="grid-column: span 1;">
+        <h3>Coating</h3>
+        <p>Bescherming van lak voor langdurige glans en bescherming.</p>
+      </div>
+      <div class="card" style="grid-column: span 1;">
+        <h3>Onderhouds beurt klein/groot</h3>
+        <p>Regelmatig onderhoud om jouw voertuig in topconditie te houden.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#bfdbfe; border-radius:20px;">
+    <h2>Prijzen</h2>
+    <div class="prices">
+      <div class="card">
+        <h3>Auto</h3>
+        <p><strong>Binnen reinigen:</strong> €60</p>
+        <p><strong>Buiten wassen:</strong> €40</p>
+        <p><strong>Velgen diep reinigen:</strong> +€15</p>
+        <p><strong>Complete reiniging (binnen &amp; buiten):</strong> €90</p>
+        <p><strong>Wax behandeling:</strong> €30</p>
+        <p>Extra glans en bescherming van de lak.</p>
+        <p><strong>Coating (incl. voorbereiding):</strong> €140</p>
+        <p>Langdurige bescherming en diepe glans.</p>
+      </div>
+
+      <div class="card">
+        <h3>Bestelbussen / grote voertuigen</h3>
+        <p><strong>Binnen reinigen:</strong> €80</p>
+        <p><strong>Buiten wassen:</strong> €60</p>
+        <p><strong>Velgen diep reinigen:</strong> +€20</p>
+        <p><strong>Complete reiniging (binnen &amp; buiten):</strong> €120</p>
+        <p><strong>Wax behandeling:</strong> €45</p>
+        <p>Extra glans en bescherming van de lak.</p>
+        <p><strong>Coating (incl. voorbereiding):</strong> €180</p>
+        <p>Langdurige bescherming en diepe glans.</p>
+      </div>
+
+      <div class="card">
+        <h3>Motor / scooter</h3>
+        <p><strong>Binnen reinigen:</strong> €60</p>
+        <p><strong>Buiten wassen:</strong> €30</p>
+        <p><strong>Diep reinigen:</strong> €60</p>
+        <p>Grondige reiniging van alle zichtbare onderdelen</p>
+        <p><strong>Wax behandeling:</strong> €20</p>
+        <p>Extra glans en bescherming van de lak.</p>
+        <p><strong>Coating (incl. voorbereiding):</strong> €80</p>
+        <p>Langdurige bescherming en diepe glans.</p>
+      </div>
+
+      <div class="card">
+        <h3>Verkoop klaar maken</h3>
+        <p><strong>Complete reiniging + presentatie:</strong> €100</p>
+        <p>Perfect voor het verhogen van de verkoopwaarde</p>
+        <p><strong>Wax behandeling</strong> (prijs afhankelijk van voertuig)</p>
+        <p>Extra glans en bescherming van de lak.</p>
+        <p><strong>Coating (incl. voorbereiding)</strong> (prijs afhankelijk van voertuig)</p>
+        <p>Langdurige bescherming en diepe glans.</p>
+      </div>
+
+      <div class="card" style="grid-column: 1 / span 2;">
+        <h3>Onderhoud</h3>
+        <p><strong>Kleine beurt:</strong> €75</p>
+        <p><strong>Grote beurt:</strong> €150</p>
+        <p>Exclusief onderdelen</p>
+        <p>Controle en onderhoud voor optimale werking</p>
+      </div>
+
+      <div class="card" style="grid-column: 3 / span 2;">
+        <h3>Bandenwissel</h3>
+        <p><strong>Wissel (zonder balanceren):</strong> €30</p>
+        <p><strong>Wissel + balanceren:</strong> €50</p>
+        <p><strong>Nieuwe banden monteren + balanceren</strong> (excl. banden)</p>
+        <p>2 banden: €40</p>
+        <p>4 banden: €70</p>
+      </div>
+
+      <div class="card" style="grid-column: 2 / span 2;">
+        <h3>Extra service</h3>
+        <p><strong>Voertuig halen &amp; breng service:</strong></p>
+        <p>€10 + €0,50 per km</p>
+        <p><strong>Minimaal:</strong> €15</p>
+        <p>Auto's, Bussen en scooters mogelijk, motoren niet</p>
+      </div>
+    </div>
+    <p class="intro price-note">Prijzen kunnen variëren afhankelijk van de staat van het voertuig.</p>
+  </section>
+
+  <section style="background: linear-gradient(135deg, #93c5fd, #60a5fa); border-radius:20px;">
+    <h2>Volg ons</h2>
+    <p class="intro">Bekijk ons werk op Instagram en maak eenvoudig een afspraak via WhatsApp.</p>
+    
+    <div style="display:flex; justify-content:center; margin-top:30px;">
+      <div class="card" style="max-width:300px; text-align:center; background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); color:#ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.4);">
+        <h3>📸 Instagram</h3>
+        <p>Bekijk onze resultaten en projecten.</p>
+        <a class="btn" href="https://instagram.com/jimmysvoertuigreiniging" target="_blank">Bekijk Instagram</a>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a class="btn btn-whatsapp" href="https://wa.me/31614069168" target="_blank">Maak afspraak via WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact</h2>
+      
+      <p><strong>Telefoon:</strong> 0614069168</p>
+      <p><strong>E-mail:</strong> jimmysvoertuigreiniging@gmail.com</p>
+      <p><strong>Werkgebied:</strong> Hoekse Waard en omgeving</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jimmy’s Voertuig Reiniging - Alle rechten voorbehouden</p>
+  </footer>
+</body>
+</html>
