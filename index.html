@@ -1228,7 +1228,7 @@
       updateServiceInfo();
 
       const message = buildWhatsAppMessage(total);
-      document.getElementById('sendCalculation').href = `https://wa.me/31614069168?text=${message}`;
+      document.getElementById('sendCalculation').href = `https://wa.me/31614069168?text=${encodeURIComponent(decodeURIComponent(message))}`;
     }
 
     vehicleType.addEventListener('change', renderOptions);
