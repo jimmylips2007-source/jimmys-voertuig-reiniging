@@ -1099,7 +1099,7 @@
 
       if (!selectedDate) {
         appointmentTime.innerHTML = '<option value="">Kies eerst een datum</option>';
-        appointmentInfo.textContent = 'Maandag t/m vrijdag: 19:00 - 22:00 • Zaterdag: 14:00 - 22:00 • Zondag: 10:00 - 22:00';
+        appointmentInfo.textContent = 'Maandag t/m vrijdag: 19:00 - 21:00 • Zaterdag: 14:00 - 21:00 • Zondag: 10:00 - 21:00';
         return;
       }
 
@@ -1107,17 +1107,17 @@
       const day = date.getDay();
 
       let startHour;
-      let endHour = 22;
+      let endHour = 21;
 
       if (day >= 1 && day <= 5) {
         startHour = 19;
-        appointmentInfo.textContent = 'Op maandag t/m vrijdag zijn tijden vanaf 19:00 tot 22:00 beschikbaar.';
+        appointmentInfo.textContent = 'Op maandag t/m vrijdag zijn tijden vanaf 19:00 tot 21:00 beschikbaar.';
       } else if (day === 6) {
         startHour = 14;
-        appointmentInfo.textContent = 'Op zaterdag zijn tijden vanaf 14:00 tot 22:00 beschikbaar.';
+        appointmentInfo.textContent = 'Op zaterdag zijn tijden vanaf 14:00 tot 21:00 beschikbaar.';
       } else {
         startHour = 10;
-        appointmentInfo.textContent = 'Op zondag zijn tijden vanaf 10:00 tot 22:00 beschikbaar.';
+        appointmentInfo.textContent = 'Op zondag zijn tijden vanaf 10:00 tot 21:00 beschikbaar.';
       }
 
       for (let hour = startHour; hour <= endHour; hour++) {
